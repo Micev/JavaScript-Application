@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SlideShow</title>
+    <script src="../jquery-2.1.1.min.js"></script>
+    <script src="jquery.cycle.all.js"></script>
+    <style>
+        #wrapper{
+            display: block;
+            margin: 0 auto;
+            width: 680px;
+            height: 520px;
+        }
+        .container{
+            overflow: auto;
+        }
+        #slider{
+            display: block;
+            float: left;
+            overflow: hidden;
+            width: 680px;
+            height: 520px;
+            position: absolute;
+        }
+        #prev{
+            background-image: url("images/prev.png") ;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            float: left;
+            width: 128px;
+            height: 520px;
+            position: relative;
+            z-index: 99;
+        }
+        #next{
+            background-image: url("images/next.png") ;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            float: right;
+            width: 128px;
+            height: 520px;
+            position: relative;
+            z-index: 99;
+        }
+        img{
+            width: 680px;
+            height: 520px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="controller" id="prev"></div>
+            <div id="slider">
+                <img src="images/alko_alaikainen.jpeg">
+                <img src="images/beaver_art.jpeg">
+                <img src="images/ekkp_norwegian_army.jpeg">
+                <img src="images/fun106.jpg">
+                <img src="images/rap.jpg">
+            </div>
+            <div class="controller" id="next"></div>
+        </div>
+    </div>
+<script src="slideShow.js"></script>
+</body>
+</html>
