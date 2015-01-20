@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tree</title>
+    <script src="../jquery-2.1.1.min.js"></script>
+    <script src="tree-view-plugin.js"></script>
+    <style>
+        ul{
+            display: block;
+            list-style: none;
+        }
+        li{
+            display: none;
+            position: relative;
+
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        li:before{
+            content: "";
+            background-image: url("img/play-btn.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 15px;
+            width: 15px;
+            height: 10px;
+            display: inline-block;
+        }
+        ul.visible{
+            display: block;
+        }
+        .visible>li{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tree visible">
+        <li >Item</li>
+        <li>Item</li>
+        <li>Item
+            <ul>
+                <li>Sub item</li>
+                <li>Sub item
+                    <ul>
+                        <li>Sub item</li>
+                        <li>Sub item</li>
+                    </ul>
+                </li>
+                <li>Sub item</li>
+                <li>Sub item</li>
+            </ul>
+        </li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+<script>
+    $('.tree').treeView();
+</script>
+</body>
+</html>

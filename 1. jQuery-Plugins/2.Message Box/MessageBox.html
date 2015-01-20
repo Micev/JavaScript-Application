@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jquery-2.1.1.min.js"></script>
+    <script src="messageBox-plugin.js"></script>
+    <style>
+        #wrapper{
+            margin: 0 auto;
+            width: 500px;
+            text-align: center;
+        }
+        button{
+            width: 100px;
+            font-size: large;
+            border-radius: 10px;
+        }
+        #message-box {
+            width: 100%;
+
+        }
+
+        #message-box .box {
+            width: 100%;
+            opacity: 0;
+            padding: 20px;
+            font-size: 15px;
+            box-sizing: border-box;
+            color: white;
+            margin: 3px;
+            border-radius: 5px;
+        }
+
+        .success {
+            background-color: green;
+        }
+
+        .error {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+<button class="success-btn">Success</button>
+<button class="error-btn">Error</button>
+<div id="message-box"></div>
+<script>
+    var messageBox = $('#message-box').messageBox();
+    messageBox.success('Success message.');
+    messageBox.error('Error message.');
+
+    $('button').click(function() {
+        var btnClass = $(this).attr('class');
+
+        if(btnClass == 'success-btn') {
+            messageBox.success('Success message.');
+        } else if(btnClass == 'error-btn') {
+            messageBox.error('Error message.');
+        }
+    });
+</script>
+</div>
+</body>
+</html>
