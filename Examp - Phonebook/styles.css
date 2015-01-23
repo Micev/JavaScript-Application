@@ -24,8 +24,9 @@ body {
 }
 
 #wrapper {
-    margin-left: 111px;
-    /*text-align: center;*/
+    margin-left: 122px;
+    min-width: 316px;
+	max-width: 350px;
 }
 
 .button {

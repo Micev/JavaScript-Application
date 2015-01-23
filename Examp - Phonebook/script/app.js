@@ -91,7 +91,7 @@
         $('body footer').show();
 
         var currentUser = userSession.getCurrentUser();
-        $('#wrapper').text("Welcome, "+currentUser.fullname+" ("+currentUser.username+")");
+        $('#wrapper').append("<p>Welcome, "+currentUser.fullname+" ("+currentUser.username+")");
         $('#wrapper').append("<p>Please use navigation menu on the left.");
         $('#wrapper').show();
 
