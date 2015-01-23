@@ -1,0 +1,38 @@
+#wrapper{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    border: 1px solid #000;
+}
+#country{
+    list-style: none;
+    padding: 0;
+}
+#country li{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px ;
+}
+#country li a{
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+}
+#town{
+    display: none;
+}
+#town ul{
+    list-style: none;
+    padding: 0;
+}
+#town ul li{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px ;
+}
+#town ul li input{
+    float: right;
+}
