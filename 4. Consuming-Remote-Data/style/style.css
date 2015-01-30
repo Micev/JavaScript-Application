@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    margin:0 auto;
+    width: 720px;
+}
+header{
+    text-align: center;
+}
+#add_book{
+
+}
+#content{
+    padding: 5px;
+    border: 1px solid #000;
+
+}
+.book_section{
+    border: 1px solid #834245;
+    padding: 3px;
+    margin: 5px 0px;
+}
+#add_form{
+    padding: 10px;
+    background-color: azure;
+    display: none;
+}
